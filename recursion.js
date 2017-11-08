@@ -1,5 +1,6 @@
 // to test these problems you can run 'node recursion.js' in your terminal
 // Problem 1:
+// hi
 
 let n = 1;
 while (n <= 10) {
