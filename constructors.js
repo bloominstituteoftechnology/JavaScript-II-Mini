@@ -6,7 +6,7 @@
 
 function Animal(options) {
   this.name = options.name;
-  this.grow = function() {
+  grow = function() {
     console.log(`${this.name} grew larger!`);
   };
 }
