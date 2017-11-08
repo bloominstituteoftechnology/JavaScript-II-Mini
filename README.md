@@ -1,7 +1,7 @@
 # JavaScript II Mini
 ## Topics we will cover
 * Recursion
-* the 'this' keyword
+* the `this` keyword
 * constructor functions
 * classes
 ### Instructions
@@ -16,7 +16,7 @@
 * when solving complex algorithms recursion comes in handy. It is not that great for smaller, less complex algorithms.
  * For every recursive function, you'll need to establish what is called a `base case`. A `base case` is a condition that when triggered, will discontinue the call to your function.
 
-### The "this keyword
+### The `this` keyword
 * Because JavaScript is both an Object Oriented and Functional Programming language, it has some very interesting concepts built into it.
 * The 'this' keyword is one of those querky concepts that tend to trip up a lot of people coming into JavaScript.
 * You can think of this, as a Pointer to an object. For example, you can use the this keyword to reference an object without having to refer to that object's name.
