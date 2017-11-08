@@ -36,4 +36,3 @@
   2. Implicit Binding
   3. New Binding
   4. Explicit Binding
-
