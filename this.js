@@ -9,6 +9,8 @@
 * write out a code example of each explanation above
 */
 
+console.log('hello world!');
+
 // Principle 1
 
 // code example for Window Binding
