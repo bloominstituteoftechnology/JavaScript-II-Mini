@@ -9,13 +9,13 @@ while (n <= 10) {
 
 // write a recursive - function called countToTen that mimics the while loop above.
 const countToTen = (num) => {
-  if (isNaN(num)) return 'Please enter a number!';
+  if (isNaN(num)) return;
   if (num > 10) return;
   console.log(num);
   countToTen(++num);
 };
 console.log(countToTen(0));
-console.log(countToTen());
+console.log(countToTen()); //undefined
 /* ================ Next Problem ================= */
 
 // Problem 2:
