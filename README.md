@@ -4,8 +4,6 @@
 * the 'this' keyword
 * constructor functions
 * classes
-
-
 ### Instructions
 * This repository is provided as more of a follow along structure. 
 
