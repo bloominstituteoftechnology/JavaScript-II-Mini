@@ -12,18 +12,18 @@
 * write out a code example of each explanation above
 */
 
-// Principle 1
+// Principle 1: Window/Console Binding
 
 // code example for Window Binding
 
-// Principle 2
+// Principle 2: Implicit Binding
 
 // code example for Implicit Binding
 
-// Principle 3
+// Principle 3: New Binding
 
 // code example for New Binding
 
-// Principle 4
+// Principle 4: Explicit Binding
 
 // code example for Explicit Binding
