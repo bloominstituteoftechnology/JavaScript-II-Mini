@@ -13,12 +13,19 @@
 */
 
 // Principle 1: Window/Console Binding
-
 // code example for Window Binding
+function logThis() {
+    console.log(this);
+    //this simple function will return the global object
+    //in the console, it will be the console object
+    //in the browser, it will be the window object
+    //just a super simple understandable explanation--please share with others
+}
+
 
 // Principle 2: Implicit Binding
-
 // code example for Implicit Binding
+
 
 // Principle 3: New Binding
 
