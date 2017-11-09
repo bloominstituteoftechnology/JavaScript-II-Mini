@@ -9,11 +9,14 @@ while (n <= 10) {
 }
 
 // write a recursive - function called countToTen that mimics the while loop above.
-
-// code here
-
-// when you code is ready, un-comment the next line and run the file
-// console.log(countToTen());
+const countToTen = (num) => {
+  if (isNaN(num)) return;
+  if (num > 10) return;
+  console.log(num);
+  countToTen(++num);
+};
+console.log(countToTen(0));
+console.log(countToTen()); //undefined
 /* ================ Next Problem ================= */
 
 // Problem 2:
@@ -27,8 +30,13 @@ const factorial = n => {
 };
 
 console.log(factorial(5));
-
 // write the above functionin a recursive way.
 
+const recursiveFactorial = (num) => {
+  if (isNaN(num)) return 'Please enter a number!';
+  if (num === 0) return 1;
+  return num * recursiveFactorial(--num);
+
+};
 // when you code is ready, un-comment the next line and run the file
-// console.log(recursiveFactorial());
+console.log(recursiveFactorial(4));
