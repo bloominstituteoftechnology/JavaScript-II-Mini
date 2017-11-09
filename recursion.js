@@ -11,6 +11,18 @@ while (n <= 10) {
 // write a recursive - function called countToTen that mimics the while loop above.
 
 // code here
+function countUp(current) {
+  
+  if (current < 10) {
+      console.log(current);
+      countUp(current + 1);
+  }
+  if (current === 10){
+      console.log(current);
+  }
+}
+
+countUp(1);
 
 // when you code is ready, un-comment the next line and run the file
 // console.log(countToTen());
