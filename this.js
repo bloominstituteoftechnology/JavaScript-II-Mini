@@ -25,7 +25,11 @@ function logThis() {
 
 // Principle 2: Implicit Binding
 // code example for Implicit Binding
-
+const uselessObject = {
+    logUselessSelf: function() {
+        console.log(this);
+    }
+}
 
 // Principle 3: New Binding
 
