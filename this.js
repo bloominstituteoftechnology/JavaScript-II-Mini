@@ -29,11 +29,22 @@ const uselessObject = {
     logUselessSelf: function() {
         console.log(this);
     }
+    //will log entire useless self out 
 }
 
 // Principle 3: New Binding
-
 // code example for New Binding
+function OldSchoolConstructor(stuff) {
+    this.stuff = stuff;
+    this.printStuff = function() {
+      console.log(this.stuff);
+    };
+  }
+
+const myStuff = new OldSchoolConstructor("Don't mess with my stuff!");
+myStuff.printStuff();
+
+const evenMoreStuff = new OldSchoolConstructor("You better not ever mess with my stuff!");
 
 // Principle 4: Explicit Binding
 
