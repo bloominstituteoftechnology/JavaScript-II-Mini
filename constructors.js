@@ -8,6 +8,9 @@ function Animal(options) {
   this.name = options.name;
 }
 
+Animal.prototype.grow = function(name){
+  console.log(`${this.name} grew larger!`);
+} 
 // add 'grow' to Animal's prototype here
 
 // problem #2
@@ -15,19 +18,25 @@ function Animal(options) {
 // the Animal constructor needs to be invoked with the 'options' argument
 // Cat should have its prototype inherit from Animal
 // instances of Cat should also have access to the 'grow' method
+Cat.prototype = Object.create(Animal.prototype);
+
 
 function Cat(options) {
+  Animal.call(this, options);
+
   // invoke Animal here with .call
 }
+
+
 
 // connect the prototypes here
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
 
-// const foofie = new Cat({
-//   name: 'foofie',
-// });
-//
-// foofie.grow();
+const foofie = new Cat({
+  name: 'foofie',
+});
+
+foofie.grow();
 
