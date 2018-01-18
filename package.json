@@ -1,0 +1,19 @@
+{
+  "name": "help",
+  "version": "1.0.0",
+  "description": "* Recursion\r * the `this` keyword\r * constructor functions\r * classes\r ### Instructions\r * This repository is provided as more of a follow along structure.",
+  "main": "classes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddartha08/JavaScript-II-Mini.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siddartha08/JavaScript-II-Mini/issues"
+  },
+  "homepage": "https://github.com/Siddartha08/JavaScript-II-Mini#readme"
+}
