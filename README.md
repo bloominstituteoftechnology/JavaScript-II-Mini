@@ -14,12 +14,12 @@
 * recursion is another way to represent a looping program. 
 * Simliar to a `for loop` or a `while loop` a recursive function will loop until you tell it to stop. 
 * when solving complex algorithms recursion comes in handy. It is not that great for smaller, less complex algorithms.
- * For every recursive function, you'll need to establish what is called a `base case`. A `base case` is a condition that when triggered, will discontinue the call to your function.
+* For every recursive function, you'll need to establish what is called a `base case`. A `base case` is a condition that when triggered, will discontinue the call to your function.
 
 ### The `this` keyword
 * Because JavaScript is both an Object Oriented and Functional Programming language, it has some very interesting concepts built into it.
-* The 'this' keyword is one of those querky concepts that tend to trip up a lot of people coming into JavaScript.
-* You can think of this, as a Pointer to an object. For example, you can use the this keyword to reference an object without having to refer to that object's name.
+* The `this` keyword is one of those querky concepts that tend to trip up a lot of people coming into JavaScript.
+* You can think of `this` as a Pointer to an object. For example, you can use the `this` keyword to reference an object without having to refer to that object's name.
 * **example**
 ```
   const myObj = { 
@@ -28,7 +28,9 @@
       console.log(`hello my name is ${this.name}`);
     }
   };
+  
   myObj.greet();
+
 ```
 * In the above example the "this" keyword becomes active when a person's name is called. 
 * Tyler McGinnis' four rules to the 'this' keyword. [found here](https://www.youtube.com/watch?v=zE9iro4r918)
