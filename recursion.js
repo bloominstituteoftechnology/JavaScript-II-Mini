@@ -40,4 +40,4 @@ function recursiveFactorial (n) {
   return n * recursiveFactorial(n - 1);
 } 
 // when your code is ready, un-comment the next line and run the file
-// console.log(recursiveFactorial());
+console.log(recursiveFactorial());
