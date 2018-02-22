@@ -46,4 +46,4 @@ const recursiveFactorial = n => {
   }
 }
 
-// console.log(recursiveFactorial());
+console.log(recursiveFactorial());
