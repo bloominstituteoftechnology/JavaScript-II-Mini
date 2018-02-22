@@ -13,7 +13,7 @@ const countToTen = (n) => {
   if (n <= 10) {
     console.log(n);
     countToTen(++n);
-    console.log('a');
+    console.log('n'); // just to test it out
   }
 }; 
 countToTen(1);
@@ -37,4 +37,13 @@ console.log(factorial(5));
 // write the above function in a recursive way.
 
 // when your code is ready, un-comment the next line and run the file
+const recursiveFactorial = n => {
+  
+  if( n <= 1){
+    return 1;
+  } else{
+    return n * recursiveFactorial(--n); // make sure that you insert in --n because n-- is the n before decrement
+  }
+}
+
 // console.log(recursiveFactorial());
