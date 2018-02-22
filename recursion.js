@@ -27,7 +27,7 @@ const factorial = n => {
 
 console.log(factorial(5));
 
-// write the above functionin a recursive way.
+// write the above function in a recursive way.
 
-// when you code is ready, un-comment the next line and run the file
+// when your code is ready, un-comment the next line and run the file
 // console.log(recursiveFactorial());
