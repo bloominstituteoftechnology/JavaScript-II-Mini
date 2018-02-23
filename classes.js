@@ -6,6 +6,9 @@ class Animal {
   constructor(options) {
     this.name = options.name;
   }
+  grow() {
+    console.log(`${this.name} grew larger!`);
+  }
 }
 
 // problem #2
