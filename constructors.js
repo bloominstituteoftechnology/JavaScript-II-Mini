@@ -6,7 +6,13 @@
 
 function Animal(options) {
   this.name = options.name;
+  this.grow = function() {
+    console.log(`${this.name} grew larger`);
+  };
 }
+
+const fido = new Animal({name: 'Fido'});
+fido.grow();
 
 // add 'grow' to Animal's prototype here
 
