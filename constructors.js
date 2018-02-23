@@ -6,6 +6,10 @@
 
 function Animal(options) {
   this.name = options.name;
+  this.grow = function () {
+    console.log(`${this.name} grew larger!`);
+    return `${this.name} grew larger!`;
+  }
 }
 
 // add 'grow' to Animal's prototype here
@@ -18,16 +22,18 @@ function Animal(options) {
 
 function Cat(options) {
   // invoke Animal here with .call
+  return new Animal(options);
 }
+
 
 // connect the prototypes here
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
 
-// const foofie = new Cat({
-//   name: 'foofie',
-// });
-//
-// foofie.grow();
+const foofie = new Cat({
+  name: 'Foofie',
+});
+
+foofie.grow();
 
