@@ -33,6 +33,9 @@ const factorial = n => {
 console.log(factorial(5));
 
 // write the above function in a recursive way.
-
+const recursiveFactorial = (n) => {
+  if (n === 1) return 1;
+  return n * recursiveFactorial(n - 1);
+}
 // when your code is ready, un-comment the next line and run the file
-console.log(recursiveFactorial());
+console.log(recursiveFactorial(5));
