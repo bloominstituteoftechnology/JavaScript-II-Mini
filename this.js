@@ -30,7 +30,15 @@ function logSelf() {
 // Principle 3
 
 // code example for New Binding
+function newBinding(args) {
+  this.args = args;
+  this.logStuff = function() {
+    console.log(this.args);
+  }
+}
 
+const example = new newBinding('Whoa!');
+example.logStuff();
 // Principle 4
 
 // code example for Explicit Binding
