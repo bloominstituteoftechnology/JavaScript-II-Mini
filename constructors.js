@@ -23,7 +23,7 @@ cat.grow();
 
 function Cat(options) {
   // invoke Animal here with .call
-  
+  Animal.call(this, options);
 }
 
 // connect the prototypes here
