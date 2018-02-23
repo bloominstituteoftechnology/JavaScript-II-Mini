@@ -11,8 +11,9 @@ function Animal(options) {
   };
 }
 
-const fido = new Animal({name: 'Fido'});
-fido.grow();
+const ligo = new Animal({name: 'Fido'});
+
+ligo.grow();
 
 // add 'grow' to Animal's prototype here
 
