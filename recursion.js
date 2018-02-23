@@ -1,5 +1,6 @@
 // to test these problems you can run 'node recursion.js' in your terminal
 // Problem 1:
+//hola
 
 let n = 1;
 while (n <= 10) {
@@ -8,11 +9,15 @@ while (n <= 10) {
 }
 
 // write a recursive - function called countToTen that mimics the while loop above.
-
-// code here
+let count = 1;
+const countToTen = (num) => {
+  if (count > 10) return;
+    console.log(count);
+    countToTen(count++);
+}
 
 // when you code is ready, un-comment the next line and run the file
-// console.log(countToTen());
+console.log(countToTen());
 /* ================ Next Problem ================= */
 
 // Problem 2:
@@ -28,6 +33,11 @@ const factorial = n => {
 console.log(factorial(5));
 
 // write the above function in a recursive way.
-
+function recursiveFactorial (n) {
+  if (n === 0){
+    return 1;
+  }
+  return n * recursiveFactorial(n - 1);
+} 
 // when your code is ready, un-comment the next line and run the file
-// console.log(recursiveFactorial());
+console.log(recursiveFactorial());
