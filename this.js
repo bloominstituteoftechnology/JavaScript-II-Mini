@@ -17,11 +17,16 @@ console.log('hello world!');
 // Principle 1
 
 // code example for Window Binding
+function logWindowBinding() {
+  console.log(this);
+}
 
 // Principle 2
 
 // code example for Implicit Binding
-
+function logSelf() {
+  console.log(this);
+}
 // Principle 3
 
 // code example for New Binding
