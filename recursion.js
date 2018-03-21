@@ -10,6 +10,13 @@ while (n <= 10) {
 // write a recursive - function called countToTen that mimics the while loop above.
 
 // code here
+let countToTen = (num) => {
+  if (num > 10) return;
+  console.log(num);
+  countToTen(num + 1);
+}
+
+countToTen(0);
 
 // when you code is ready, un-comment the next line and run the file
 // console.log(countToTen());
@@ -28,6 +35,8 @@ const factorial = n => {
 console.log(factorial(5));
 
 // write the above function in a recursive way.
+
+
 
 // when your code is ready, un-comment the next line and run the file
 // console.log(recursiveFactorial());
