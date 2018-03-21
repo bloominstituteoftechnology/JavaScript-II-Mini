@@ -19,12 +19,18 @@ function logWindow() {
 // Principle 2: code example for Implicit Binding
 const bob = {
   name: 'Bob',
-  
+
   sayName() {
     console.log(this.name);
   } 
 }
 
 // Principle 3: code example for New Binding
+function Person(name) {
+  this.name = name;
+}
+
+const bobette = new Person('Bobette');
 
 // Principle 4: code example for Explicit Binding
+
