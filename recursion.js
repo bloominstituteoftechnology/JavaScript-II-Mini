@@ -9,6 +9,12 @@ while (n <= 10) {
 
 // write a recursive - function called countToTen that mimics the while loop above.
 
+function countToTen(count) {
+  if (count > 10) return;
+  console.log(count);
+  countToTen(++count);
+}
+
 // code here
 
 // when you code is ready, un-comment the next line and run the file
