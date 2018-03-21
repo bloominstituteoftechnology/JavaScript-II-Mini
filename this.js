@@ -76,9 +76,8 @@ console.log(any.apply(testObj, testparams))
 
 
                     // bind example
-// same as call and apply , expects a parameter or comma seperated parameters(not array) as second argument. 
-//but unlike call and apply it creates another version of the function(any()), and dose not invoke the newly created function. 
+//unlike call and apply it creates another version of the function(any()), and dose not invoke the newly created function. 
 //we can use a variable to capture the newly created function with the this keyword specified to a object. 
-//this new funciton whenever we invoke will always point to the testObj as its this . 
-let bindTest = (any.bind(testObj, 'code'));
-console.log(bindTest())                 
+//this new funciton whenever we invoke will always point to the testObj as its this . And we can pass parameter to the newly created function. 
+let bindTest = (any.bind(testObj));
+console.log(bindTest('code'))                 
