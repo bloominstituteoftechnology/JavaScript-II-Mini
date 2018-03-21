@@ -1,5 +1,5 @@
 // to test these problems you can run 'node classes.js' in your terminal
-
+//and what did i learn to right them with?
 // problem #1
 // convert the Animal constructor function from 'constructors.js' into an ES6 class
 
