@@ -58,13 +58,13 @@ let me = {
     age: 27
 };
 
-let sayName = (place1, place2, place3) => {
-    console.log('Hi my name is ' + this.name + ', Im ' + this.age + ' and Ive been to: ' + place1 + ', ' + place2 + ', ' + place3);
-}
+let sayName = function(place1, place2, place3) {
+    console.log(`Hi my name is ${this.name}, Im ${this.age} and Ive been to: ${place1}, ${place2}, ${place3}.`);
+};
 
-let places = ['Torrance', 'London', 'Tokyo']
+let places = ['Torrance', 'London', 'Tokyo'];
 
-sayName.call(me, ...places)
+sayName.call(me, ...places);
 
 
 
