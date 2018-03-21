@@ -34,3 +34,4 @@ const bobette = new Person('Bobette');
 
 // Principle 4: code example for Explicit Binding
 
+bob.sayName.call(bobette);
