@@ -30,4 +30,3 @@ function Cat(options) {
 // });
 //
 // foofie.grow();
-
