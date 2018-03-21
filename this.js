@@ -13,7 +13,9 @@ console.log('hello world!');
 
 // Principle 1
 
-// code example for Window Binding
+window.count = 50;
+let sayCount = () => console.log(this.count);
+sayCount();
 
 // Principle 2
 
