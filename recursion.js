@@ -34,6 +34,22 @@ let countToTen = (num) => {
 // console.log(factorial(5));
 
 // write the above function in a recursive way.
+// if number is less than 0, it should be not used
+// if number is 0, return 1
+// factorializing is multiplying all the numbers before it except zero
+// example 4! = 4 * 3 * 2 * 1 = 24
+// example 6! = 6 * 5 * 4 * 3 * 2 * 1 = 720
+// therefore, it should the number should be multiplied by all the numbers before it
+// then return the result
 
+let recursiveFactorial = (num) =>
+if (num = < 0)
+  return "undef";
+  else if (num === 0) {
+    return 1;
+  }
+  else {
+    return (num * recursiveFactorial(num - 1));
+  }
 // when your code is ready, un-comment the next line and run the file
 // console.log(recursiveFactorial());
