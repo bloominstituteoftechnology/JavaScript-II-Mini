@@ -9,9 +9,9 @@ while (n <= 10) {
 
 // write a recursive - function called countToTen that mimics the while loop above.
 
-const countToTen = (start = 1) => {
-     console.log("Recursion", start);
-  	 if (start < 10) countToTen (start + 1);
+const countToTen = (n = 1) => {
+     console.log('Recursion',n);
+  	 if (start < 10) countToTen (n + 1);
   };
 countToTen();
 console.log(countToTen())

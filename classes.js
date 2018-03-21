@@ -27,4 +27,6 @@ class Animal {
 // });
 //
 // foofie.grow();
-
+class Cat extends Animal {
+    
+}
