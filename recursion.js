@@ -10,9 +10,15 @@ while (n <= 10) {
 // write a recursive - function called countToTen that mimics the while loop above.
 
 // code here
+const countToTen = (counter) => {
+  if (counter > 10) return;
+  if (counter === undefined) counter = 1;
+  console.log('While Loop ' + counter);
+  return countToTen(++counter);
+}
 
 // when you code is ready, un-comment the next line and run the file
-// console.log(countToTen());
+console.log(countToTen());
 /* ================ Next Problem ================= */
 
 // Problem 2:
