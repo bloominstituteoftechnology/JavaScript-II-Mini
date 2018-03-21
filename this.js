@@ -15,7 +15,7 @@
 
 */
 
-console.log('hello world!');
+/************************************************/
 
 // Principle 1
 // code example for Window Binding
@@ -31,6 +31,7 @@ heyThere(); //returns 'hey, '
 window.name = 'jeffrey';
 heyThere(); //returns 'hey, jeffrey'
 
+/************************************************/
 
 // Principle 2
 // code example fo Implicit Binding
@@ -46,6 +47,7 @@ const Person = function(name, age) {
 const me = Person('jeffrey', 24);
 me.sayHi();
 
+/************************************************/
 
 // Principle 3
 // code example for New Binding
@@ -55,6 +57,8 @@ const Person = function(name, age) {
 };
 
 const me = new Person('jeffrey', 24);
+
+/************************************************/
 
 // Principle 4
 // code example for Explicit Binding
