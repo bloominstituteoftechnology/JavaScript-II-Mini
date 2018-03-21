@@ -19,14 +19,14 @@ console.log(this + ' window binding here');
 // Principle 2
 
 // code example for Implicit Binding
-function foo() {
+function prin2() {
     console.log(this.a);
 }
 const obj = {
     a: 'implicit binding used here',
-    foo: foo,
+    prin2: prin2,
 };
-obj.foo();
+obj.prin2();
 
 
 // Principle 3
