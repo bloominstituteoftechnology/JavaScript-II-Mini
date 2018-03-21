@@ -39,15 +39,9 @@ console.log(factorial(5));
 // write the above function in a recursive way.
 
 function recursiveFactorial(n) {
-  let i = 2;
-  function recursionFunction(n) {
-    i++;
-    if (i > n) {
-      return n;
-    }
-    return (n * recursionFunction(n-1));
-  }
-  return recursionFunction(n);
+  if(n > 1)
+    n = n * nFactorial(n-1);
+  return n;
 }
 
 // when your code is ready, un-comment the next line and run the file
