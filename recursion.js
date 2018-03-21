@@ -40,7 +40,7 @@ console.log(factorial(5));
 
 function recursiveFactorial(n) {
   if(n > 1)
-    n = n * nFactorial(n-1);
+    n = n * recursiveFactorial(n-1);
   return n;
 }
 
