@@ -1,0 +1,32 @@
+Arguments: 
+  /home/eric/.nvm/versions/node/v9.8.0/bin/node /home/eric/.nvm/versions/node/v9.8.0/bin/yarnpkg test recursion
+
+PATH: 
+  /home/eric/.nvm/versions/node/v9.8.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.8.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "/home/eric/Documents/LambdaSchool/JavaScript-II-Mini"
+      at new MessageError (/home/eric/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at /home/eric/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:40048:15
+      at Generator.next (<anonymous>)
+      at step (/home/eric/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /home/eric/.nvm/versions/node/v9.8.0/lib/node_modules/yarn/lib/cli.js:109:13
+      at <anonymous>
