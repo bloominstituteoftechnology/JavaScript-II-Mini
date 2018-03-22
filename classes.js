@@ -7,7 +7,7 @@ class Animal {
         this.name = options.name;
     }
 
-    gorw(params) {
+    grow() {
         return '${this.name} grew larger!'
     }
 }
@@ -20,16 +20,16 @@ class Cat extends Animal {
         super(options);
 
     }
-    gorw() {
+    grow() {
         return '${this.name} grew larger!'
     }
 }
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
 
-// const foofie = new Cat({
-//   name: 'foofie',
-// });
-//
-// foofie.grow();
+const foofie = new Cat({
+  name: 'foofie',
+});
+
+foofie.grow();
 
