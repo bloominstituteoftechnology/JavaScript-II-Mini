@@ -19,8 +19,8 @@ sayCount();
 // Principle 2
 
 const guy = {
-    name: "Joe",
-    sayName: function() { console.log(this.name) }
+  name: "Joe",
+  sayName: function () { console.log(this.name) }
 }
 
 guy.sayName();
@@ -28,13 +28,13 @@ guy.sayName();
 // Principle 3
 
 function Dude(name) {
-    this.name = name;
-    this.sayName = function() { console.log(this.name) }
+  this.name = name;
+  this.sayName = function () { console.log(this.name) }
 }
 
 new Dude("Bob").sayName();
 
 // Principle 4
 
-const sayName = function() { console.log(this.name) };
+const sayName = function () { console.log(this.name) };
 sayName.bind(guy)();
