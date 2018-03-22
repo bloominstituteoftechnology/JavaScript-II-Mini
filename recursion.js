@@ -11,8 +11,14 @@ while (n <= 10) {
 
 // code here
 
+function countToTen(count) {
+  if (count > 10) return;
+  console.log(count);
+  countToTen(++count);
+}
+
 // when you code is ready, un-comment the next line and run the file
-// console.log(countToTen());
+countToTen(1);
 /* ================ Next Problem ================= */
 
 // Problem 2:
@@ -29,5 +35,10 @@ console.log(factorial(5));
 
 // write the above function in a recursive way.
 
+function rFactorial(n) {
+  if (n === 0) return 1;
+  return n * rFactorial(n - 1);
+}
+
 // when your code is ready, un-comment the next line and run the file
-// console.log(recursiveFactorial());
+console.log(rFactorial(5));
