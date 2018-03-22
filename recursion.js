@@ -23,7 +23,7 @@ const countToTen = (n) => {
 
 // Problem 2:
 
-const factorial = n => { // function named 1
+const factorial = n => { 
   let result = 1;
   for (let i = 2; i <= n; i++) {
     result *= i;
