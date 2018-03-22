@@ -33,3 +33,4 @@ const foofie = new Cat({
 });
 
 foofie.grow();
+//switch to console.log if using replit or jsbin
