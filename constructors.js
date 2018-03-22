@@ -7,6 +7,9 @@
 function Animal(options) {
   this.name = options.name;
 }
+Animal.prototype.grow = function(){
+  return `${this.name} grew larger!`
+}
 
 // add 'grow' to Animal's prototype here
 
