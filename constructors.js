@@ -25,7 +25,7 @@ function Cat(options) {
 }
 
 // connect the prototypes here
-Cat.prototype = Animal.prototype;
+Cat.prototype = Object.create(Animal.prototype);
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
