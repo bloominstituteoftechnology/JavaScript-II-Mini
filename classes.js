@@ -4,21 +4,21 @@
 // convert the Animal constructor function from 'constructors.js' into an ES6 class
 
 class Animal {
-    constructor (options) {
+  constructor(options) {
     this.name = options.name;
   }
-  grow () {
+  grow() {
     return this.name + ' grew larger!';
-  }  
+  }
 }
 
 // problem #2
 // convert the Cat constructor function from 'constructors.js' into an ES6 class
 
 class Cat extends Animal {
-    constructor (options) {
+  constructor(options) {
     super(options);
-      }
+  }
 }
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
@@ -28,4 +28,4 @@ const foofie = new Cat({
   name: 'foofie',
 });
 
-console.log (foofie.grow());
+console.log(foofie.grow());
