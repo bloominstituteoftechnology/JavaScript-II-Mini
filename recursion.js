@@ -47,12 +47,25 @@ console.log(factorial(5));
 //   recursiveFactorial(output);
 // };
 
-let a = 1;
-function recursiveFactorial(num) {
-  if (a === num) {
-    
+
+function recursiveFactorial(n) {
+//   let output = num;
+//   if (num === 2) {
+//     return output;
+//   }
+//   output *= (num-1);
+//   recursiveFactorial(--num);
+
+  if (n < 0) {
+    return 0;
+  } else if (n === 0) {
+    return 1;
+  } else {
+    return (n * (recursiveFactorial(n-1)));
   }
 }
+
+
 
 // when your code is ready, un-comment the next line and run the file
 console.log(recursiveFactorial(5));
