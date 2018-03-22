@@ -1,15 +1,20 @@
-/* The for principles of "this";
+/* The 4 principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
 * 1. Window Binding will cause the 'this' function to refer to 
-the applicaiton frame of wherever you are executing the funciton. 
-* 2. Implicit Binding uses this usually FOLLOWED by a dot and then 
-an identifier that refers to a specific variable to tie into the function. 
+the applicaiton frame of wherever you are executing the funciton. Not very Useful! 
+* 2. With Implicit Binding, 'this' from an object's method funciton refers to the 
+object directly before the '.' when called by a function (ex: me.sayName()). 
+It can be called with in a nested funciton also: me.mother.sayName(). 
 * 3. New Binding is used to create a bound function that can have new objects 
 passed in via 'this'. It can be used with constructor functions in object oriented 
-programming to tie changable variables into a related function.
+programming to tie changable variables into a related function. It is defined with 
+the word 'New' before the bound function. 
 * 4. Explicit Binding can be used to override constructor objects by calling the 
-funciton explicitly with .call and .apply.  These fucntions are very similar except that .call uses a (...__) format. 
+funciton explicitly with .call and .apply.  These fucntions are very similar except 
+that .call uses a (...__) format or passes in variables listed out. The .apply passes in 
+whole arrays.  There is also a .bind that can pass in variables to a funciton like .call 
+but is used when defining a new funciton (this seems like a different form of the New Bind function).
 *
 * write out a code example of each explanation above
 */
@@ -49,7 +54,7 @@ let myinfo = {
   let sayName = function(hobby1, hobby2) {
     console.log('My name is ' + this.name + ', I like to ' + hobby1 + ' and ' + hobby2 + '.');
   };
-   let sayAge = function(hobby1, hobby2) {
+  let sayAge = function(hobby1, hobby2) {
     console.log('My age is ' + this.age + ', I still like to ' + hobby1 + ' and ' + hobby2 + '.');
   };
   
