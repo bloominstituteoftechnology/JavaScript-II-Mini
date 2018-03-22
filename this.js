@@ -13,10 +13,8 @@
 // Principle 1
 
 // code example for Window Binding
-window.onload = () => {
-  this.alert("hello world");
-  func(this);
-}
+this.alert("hello world");
+
 // Principle 2
 
 // code example for Implicit Binding
