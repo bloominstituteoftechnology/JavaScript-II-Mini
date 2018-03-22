@@ -13,7 +13,7 @@ if we have any inner object inside a object the this points to the global object
 Explicit binding is when we use call , apply or bind to any function. we define what the this keyword will point to in the first parameter of call, apply and bind. 
 
 * 4. New keyword binding scope
-this is when we use a constructor function to create new objects, and then, this keyword points to the parameter passed into the constructor.
+this is when we use a constructor function to create new objects, and then, this keyword points to the new object being created.
 * write out a code example of each explanation above
 */
 
@@ -42,7 +42,7 @@ let newObj = {
 
 // code example for New Binding
 function ConstExample(param1, param2) {
-    this.name = param1; // here this points to the parameter passed 
+    this.name = param1; // here this points to the new object (childObj); 
     this.age = param2;
 }
 
