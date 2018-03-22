@@ -28,5 +28,12 @@ class Animal {
 //
 // foofie.grow();
 class Cat extends Animal {
-    
+  super(catOptions) {
+    this.speak = catOptions.speak;
 }
+}
+const foofie = new Cat({
+  name: 'foofie',
+});
+
+foofie.grow();
