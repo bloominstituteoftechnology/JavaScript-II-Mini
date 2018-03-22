@@ -13,11 +13,10 @@
 // Principle 1
 
 // code example for Window Binding
-func = () {
-  return this.alert("hello world"); //<-- defaults to the window.
+window.onload = () => {
+  this.alert("hello world");
+  func(this);
 }
-func();
-
 // Principle 2
 
 // code example for Implicit Binding

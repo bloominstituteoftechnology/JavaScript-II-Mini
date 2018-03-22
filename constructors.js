@@ -9,6 +9,10 @@ function Animal(options) {
 }
 
 // add 'grow' to Animal's prototype here
+Animal.prototype.grow = () => {
+    console.log(name + " grew larger!");
+}
+
 
 // problem #2
 // setup Cat to inherit from Animal
