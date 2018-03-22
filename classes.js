@@ -2,18 +2,34 @@
 
 // problem #1
 // convert the Animal constructor function from 'constructors.js' into an ES6 class
-
+class Animal {
+	// create instances of Animal {}
+	constructor(options) {
+		this.name = options.name;
+	}
+	// grow method belongs to Animal.prototype
+	grow() {
+		console.log(`${this.name} grew larger`);
+	}
+}
 
 // problem #2
 // convert the Cat constructor function from 'constructors.js' into an ES6 class
-
+class Cat extends Animal {
+	// extend cat to its parent Animal
+	constructor(options) {
+		// link Cat to its parent's properties and prototype
+			// Cat can now use grow()
+		super(options);
+	}
+}
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
 
-// const foofie = new Cat({
-//   name: 'foofie',
-// });
-//
-// foofie.grow();
+const foofie = new Cat({
+  name: 'foofie',
+});
+
+foofie.grow();
 
