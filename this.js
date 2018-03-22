@@ -3,7 +3,7 @@
 *
 * 1. implicit - when used from within an object, this refers to the object in which it is being used
 * 2. explicit - .call , .apply, .bind
-* 3. window/global
+* 3. window/global - if binding is not specified then this refers to window which is the global object
 * 4. new keyword - when used in a constructor function, this refers to the new object that will be created using the constructor
 *
 * write out a code example of each explanation above
@@ -14,8 +14,9 @@ console.log('hello world!');
 // Principle 1
 
 // code example for Window Binding
-console.log(this);
-
+function sayHello(myObj)
+console.log('Hello ' + this.name);
+// window.name = 'Iqra';
 // Principle 2
 
 // code example for Implicit Binding
