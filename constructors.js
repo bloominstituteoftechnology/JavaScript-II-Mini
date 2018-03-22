@@ -6,8 +6,6 @@
 
 function Animal(options) {
   this.name = options.name;
-
-
 }
 
 Animal.prototype.grow = function() {
@@ -15,7 +13,6 @@ Animal.prototype.grow = function() {
 }
 
 dog = new Animal({name: 'Fido'});
-
 dog.grow();
 
 // add 'grow' to Animal's prototype here
@@ -28,9 +25,7 @@ dog.grow();
 
 function Cat(options) {
   Animal.call(this, options);
-
 }
-
 
 // connect the prototypes here
 Cat.prototype = Object.create(Animal.prototype);
