@@ -9,7 +9,7 @@ function Animal(options) {
 }
 
 Animal.prototype.grow = function() {
-  console.log('${this.name} grew larger!');
+  return '${this.name} grew larger!');
 };
 
 // problem #2
@@ -19,7 +19,7 @@ Animal.prototype.grow = function() {
 // instances of Cat should also have access to the 'grow' method
 
 function Cat(options) {
-  Animal.call(this, catOptions);
+  Animal.call(this, options);
   this.isCat = catOptions.isCat;
 }
 
