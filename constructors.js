@@ -9,7 +9,14 @@ function Animal(options) {
 }
 
 // add 'grow' to Animal's prototype here
-
+Animal.prototype.grow = function() {
+  console.log(`${this.name} grew larger`);	
+}
+const zebra = new Animal({
+	name: 'Will'
+});
+console.log(zebra);
+console.log(zebra.grow());
 // problem #2
 // setup Cat to inherit from Animal
 // the Animal constructor needs to be invoked with the 'options' argument
