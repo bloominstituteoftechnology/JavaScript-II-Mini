@@ -34,7 +34,7 @@ this.alert('Hello');
 const myObj = {
     name: 'Justin',
     age: 23,
-    greeting: function() {
+    greeting: function () {
         console.log(`Hello, my name is ${this.name}`)
     }
 };
@@ -43,11 +43,11 @@ const myObj = {
 
 // code example for New Binding
 
-const Person = function(name, age, gender) {
+const Person = function (name, age, gender) {
     this.name = name;
     this.age = age;
     this.gender = gender;
-    this.greet = function() {
+    this.greet = function () {
         console.log(`Hello, my name is ${this.name}`);
     };
 };
@@ -59,7 +59,7 @@ justin.greet();
 
 // code example for Explicit Binding
 
-const hey = function() {
+const hey = function greets() {
     console.log(`Hello, my name is ${this.name}`);
 };
 
