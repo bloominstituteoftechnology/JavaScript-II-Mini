@@ -21,16 +21,18 @@ Animal.prototype.grow = function() {
 
 function Cat(options) {
   // invoke Animal here with .call
+  Animal.call(this, options);
 }
 
 // connect the prototypes here
+Cat.prototype = Object.create(Animal.prototype);
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
 
-// const foofie = new Cat({
-//   name: 'foofie',
-// });
-//
-// foofie.grow();
+const foofie = new Cat({
+  name: 'foofie',
+});
+
+foofie.grow();
 
