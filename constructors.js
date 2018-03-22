@@ -21,7 +21,7 @@ Animal.prototype.grow() =  function() {
 
 function Cat(options) {
   // invoke Animal here with .call
-  Animal.call(thos, catOptions);
+  Animal.call(this, catOptions);
   this.speak.catOptions.speak;
   this.meow = catOptions.meow;
 }
