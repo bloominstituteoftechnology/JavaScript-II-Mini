@@ -24,9 +24,5 @@ class Cat extends Animal {
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution
 
-const foofie = new Cat({
-    name: 'foofie',
-});
 
-foofie.grow();
 
