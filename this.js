@@ -19,18 +19,40 @@ function coding(language) {
   console.log(this.code);
   return language;
 }
-
 window.code = "javascript";
-coding("CSS");
 
 // Principle 2
 
 // code example for Implicit Binding
 
+const myDay = {
+  listen: "Sufjan Stevens",
+  code: "JavaScript",
+  dinner: "meatloaf",
+  cook: function () {
+    console.log(this.dinner);
+  }
+};
+myDay.cook();
+
 // Principle 3
 
 // code example for New Binding
 
+function veganSandwiches(name, mainIngredient, secondaryIngredient) {
+  this.name = name;
+  this.mainIngredient = mainIngredient;
+  this.secondaryIngredient = secondaryIngredient;
+}
+
+var sandwich1 = new veganSandwiches("Refried Bean Wrap", "Refried Beans", "Avocado")
+
 // Principle 4
 
 // code example for Explicit Binding
+
+function eating() {
+  return console.log(this.name + " is a functon, not a recipe!");
+}
+
+eating.call(veganSandwiches);
