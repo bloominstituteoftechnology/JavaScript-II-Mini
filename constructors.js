@@ -21,8 +21,8 @@ Animal.prototype.grow = function () {
 // Cat should have its prototype inherit from Animal
 // instances of Cat should also have access to the 'grow' method
 
-function Cat(options) {
-  Animal.call(this, options);
+function Cat(catOptions) {
+  Animal.call(this, catOptions);
 }
 
 // connect the prototypes here
