@@ -6,9 +6,15 @@
 
 function Animal(options) {
   this.name = options.name;
+  this.grow=options.grow;
 }
 
+  Animal.prototype.grow = function {
+    return `${this.name} grew larger!`;
+  }
+
 // add 'grow' to Animal's prototype here
+grow.prototype.Object.create(Animal.prototype);
 
 // problem #2
 // setup Cat to inherit from Animal
@@ -18,6 +24,8 @@ function Animal(options) {
 
 function Cat(options) {
   // invoke Animal here with .call
+  Animal.call(options);
+  this.grow = options.grow;
 }
 
 // connect the prototypes here

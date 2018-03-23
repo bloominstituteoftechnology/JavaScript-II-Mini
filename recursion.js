@@ -17,6 +17,7 @@ while (n <= 10) {
 
 };
 countToTen()
+
 // when you code is ready, un-comment the next line and run the file
  console.log(countToTen());
 /* ================ Next Problem ================= */
