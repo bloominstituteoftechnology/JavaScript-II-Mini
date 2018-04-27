@@ -9,6 +9,14 @@
 
 * In class we will be going over the principles listed above and you will be expected to follow along when the instructor asks you to do so.
 
+øøø
+´ø
+
+ó
+
+oøøøøo
+
+
 ### Recursion
 #### What it is
 * recursion is another way to represent a looping program. 
