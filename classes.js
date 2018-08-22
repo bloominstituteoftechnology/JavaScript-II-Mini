@@ -4,10 +4,13 @@
 // convert the Animal constructor function from 'constructors.js' into an ES6 class
 class Animal {
     constructor(options) {
-        this.options = options;
-        this.name = name;
+        this.name = options.name;
+    }
+    grow() {
+        return `${this.name} grew larger!`
     }
 }
+
 //NEW STYLE
 // class Foo {
 //     constructor(x) {
@@ -25,7 +28,11 @@ class Animal {
 
 // problem #2
 // convert the Cat constructor function from 'constructors.js' into an ES6 class
-
+class Cat extends Animal{
+    constructor(options) {
+        super(options);
+    }
+}
 
 // if everything is setup properly the code below will print 'Foofie grew larger!'
 // uncomment the code below to test your solution

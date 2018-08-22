@@ -25,7 +25,6 @@ Animal.prototype.grow = function() {
 function Cat(options) {
   // invoke Animal here with .call
   Animal.call(this, options);
-  this.isCat = options.isCat;
 }
 
 // connect the prototypes here
